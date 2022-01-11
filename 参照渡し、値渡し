@@ -1,0 +1,32 @@
+const junki = {
+    name: {
+        first: 'junki',
+        family: 'yamashita',
+    },
+    birth: {
+        year: 1994,
+        month: 11,
+        day: 17,
+    },
+};
+
+// オブジェクトを値渡しする方法
+const sato = JSON.parse(JSON.stringify(junki));
+
+// オブジェクトを参照渡しする方法
+const sato = junki;
+
+sato.name.first = 'kotaro';
+sato.name.family = 'sato';
+sato.birth.year = 1994;
+sato.birth.month = 5;
+sato.birth.day = 26;
+
+console.log('sato');
+console.log(sato);
+
+console.log('junki');
+console.log(junki);
+
+console.log('終わり！');
+
