@@ -1,0 +1,41 @@
+console.log('start!!!');
+
+// 1回目
+
+const height = 10;
+
+console.log('高さは' + height + 'cmです！');
+
+const width = 10;
+
+console.log('はばは' + width + 'cmです！');
+
+const result = getAreaSize(height, width);
+
+console.log('面積は' + result + 'です！！');
+
+
+// 2回目
+
+const height2 = 30;
+
+console.log('高さは' + height2 + 'cmです！');
+
+const width2 = 200;
+
+console.log('はばは' + width2 + 'cmです！');
+
+const result2 = getAreaSize(height2, width2);
+
+console.log('面積は' + result2 + 'です！！');
+
+
+/// 上は実行ゾーン
+/// 下は定義ゾーン
+
+function getAreaSize(y, x) {
+    const answer =  y * x;
+    const answer2 = answer * 100;
+    console.log('計算終了！！')
+    return answer2;
+}
